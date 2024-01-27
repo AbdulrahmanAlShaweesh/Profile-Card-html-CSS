@@ -13,12 +13,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #d7d7d7;
+  /* background-color: #d7d7d7; */
+  background-color: #f4f4f4;
+}
+
+:root {
+  --main-color: #4070f4;
 }
 
 .profle-card {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   max-width: 470px;
   width: 100%;
@@ -42,7 +47,7 @@ body {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  outline: 3px solid #4070f4;
+  outline: 3px solid var(--main-color);
   border: 3px solid #fff;
 }
 
@@ -53,6 +58,92 @@ body {
 }
 .profle-card .text-data .name {
   margin: 5px 0;
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: 500;
+}
+
+.profle-card .text-data .job {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profle-card .media-icons {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.profle-card .media-icons .link {
+  background-color: var(--main-color);
+  margin: 0 6px;
+  text-decoration: none;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.profle-card .media-icons .link1 {
+  background-color: #526e9b;
+}
+
+.profle-card .media-icons .link2 {
+  background-color: #4398c0;
+}
+
+.profle-card .media-icons .link3 {
+  background-color: #a7506b;
+}
+
+.profle-card .media-icons .link4 {
+  background-color: #a21c1b;
+}
+.profle-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profle-card .buttons button {
+  border: none;
+  margin: 0 10px;
+  padding: 10px 35px;
+  border-radius: 30px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.profle-card .button:hover {
+  background-color: #0e4bf1;
+}
+
+.profle-card .anaytic {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.profle-card .anaytic .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid #e7e7e7;
+}
+
+.profle-card .anaytic .data i {
+  margin-right: 3px;
+  font-size: 18px;
+}
+
+.profle-card .anaytic .data:last-child {
+  border-right: none;
 }
